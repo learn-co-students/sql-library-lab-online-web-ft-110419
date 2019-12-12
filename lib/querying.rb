@@ -23,17 +23,6 @@ def select_value_and_count_of_most_prolific_species
   LIMIT 1"
 end
 
-# "SELECT characters.species, COUNT(characters.species)
-# FROM characters
-# INNER JOIN character_books
-# ON characters.id = character_books.character_id
-# INNER JOIN books
-# ON books.id = character_books.book_id
-# GROUP BY characters.species
-# ORDER BY COUNT(characters.species) DESC
-# LIMIT 1  
-# "
-
 def select_name_and_series_subgenres_of_authors
   "SELECT authors.name, subgenres.name
   FROM authors

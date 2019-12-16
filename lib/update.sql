@@ -1,3 +1,4 @@
 UPDATE characters
-SET species="Martian"
-WHERE id=8;
+SET species = "Martian"
+WHERE id = (SELECT MAX(id)
+FROM characters);

@@ -1,0 +1,1 @@
+update Characters set species = "Martian" where name = "Rubeus Hagrid";
